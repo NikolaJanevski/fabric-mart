@@ -3,11 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { TopNavBarComponent } from 'src/app/navigation/topnavbar.component';
 
 import { AppComponent } from './app.component';
+import { SecondTopNavBarComponent } from './navigation/second.topnavbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TopNavBarComponent
+    TopNavBarComponent,
+    SecondTopNavBarComponent
   ],
   imports: [
     BrowserModule

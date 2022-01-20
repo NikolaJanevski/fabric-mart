@@ -1,0 +1,17 @@
+a.nav-link.active {
+    border-bottom-style: solid;
+    border-color: #836f91;
+    border-width: 6px;
+}
+
+ul.dropdown-menu {
+    background-color: #836f91;
+}
+
+a.dropdown-item {
+    color: lightgray
+}
+
+a.dropdown-item:hover {
+    background-color: #836f91;
+}
