@@ -4,6 +4,7 @@ import { TopNavBarComponent } from 'src/app/navigation/topnavbar.component';
 
 import { AppComponent } from './app.component';
 import { FooterComponent } from './navigation/footer/footer.component';
+import { SocialFooterComponent } from './navigation/footer/social.footer.component';
 import { SecondTopNavBarComponent } from './navigation/second.topnavbar.component';
 
 @NgModule({
@@ -11,7 +12,8 @@ import { SecondTopNavBarComponent } from './navigation/second.topnavbar.componen
     AppComponent,
     TopNavBarComponent,
     SecondTopNavBarComponent,
-    FooterComponent
+    FooterComponent,
+    SocialFooterComponent
   ],
   imports: [
     BrowserModule
