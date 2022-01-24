@@ -8,3 +8,7 @@
     outline-color:purple;
     color:purple;
 }
+
+.input-group-text {
+    background-color: white;   
+}

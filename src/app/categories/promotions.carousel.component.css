@@ -8,3 +8,11 @@
 .my-indicator.active {
     background-color:white !important;
 }
+
+.carousel-control-prev {
+    margin-left: -5%;
+}
+
+.carousel-control-next {
+    margin-right: -5%;
+}
