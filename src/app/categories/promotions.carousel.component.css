@@ -1,0 +1,10 @@
+.my-indicator {
+    background-color:#3d3d3d !important;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+}
+
+.my-indicator.active {
+    background-color:white !important;
+}
