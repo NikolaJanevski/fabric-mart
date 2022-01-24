@@ -1,0 +1,18 @@
+.round-card {
+    background-color: #847092;
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+    color:whitesmoke;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    transform: rotate(-15deg);
+}
+
+.card {
+    border-style: none;
+}
+
+.card-link {
+    text-decoration: none;
+    color: #847092;
+}
