@@ -8,6 +8,7 @@ import { PromotionsCarouselComponent } from './categories/promotions.carousel.co
 import { FooterComponent } from './navigation/footer/footer.component';
 import { SocialFooterComponent } from './navigation/footer/social.footer.component';
 import { SecondTopNavBarComponent } from './navigation/second.topnavbar.component';
+import { VerticalCardComponent } from './store/vertical.card.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { SecondTopNavBarComponent } from './navigation/second.topnavbar.componen
     FooterComponent,
     SocialFooterComponent,
     CategoryCardComponent,
-    PromotionsCarouselComponent
+    PromotionsCarouselComponent,
+    VerticalCardComponent
   ],
   imports: [
     BrowserModule
