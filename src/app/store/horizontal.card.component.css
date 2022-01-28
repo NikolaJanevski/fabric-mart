@@ -1,0 +1,29 @@
+.card {
+    width: 45rem;
+    border-style: none;
+}
+
+.card-link {
+    text-decoration: none;
+    color: gray;
+}
+
+.card-link:hover {
+    color: #652f8c;
+}
+
+.badge {
+    background-color: #4b3c35;
+    font-weight:300;
+    border-radius: 0%;
+}
+
+img {
+    width: 255px;
+}
+
+button {
+    background-color: #652f8c;
+    border-style: none;
+    border-radius: 2%;
+}
