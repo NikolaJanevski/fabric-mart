@@ -9,6 +9,7 @@ import { FooterComponent } from './navigation/footer/footer.component';
 import { SocialFooterComponent } from './navigation/footer/social.footer.component';
 import { SecondTopNavBarComponent } from './navigation/second.topnavbar.component';
 import { HorizontalCardComponent } from './store/horizontal.card.component';
+import { ItemRowComponent } from './store/item.row.component';
 import { VerticalCardComponent } from './store/vertical.card.component';
 
 @NgModule({
@@ -21,7 +22,8 @@ import { VerticalCardComponent } from './store/vertical.card.component';
     CategoryCardComponent,
     PromotionsCarouselComponent,
     VerticalCardComponent,
-    HorizontalCardComponent
+    HorizontalCardComponent,
+    ItemRowComponent
   ],
   imports: [
     BrowserModule

@@ -1,0 +1,13 @@
+.card-link {
+    text-decoration: none;
+    color: gray;
+}
+
+.card-link:hover {
+    color: #652f8c;
+}
+
+.basket-button {
+    background-color: #652f8c;
+    border-style: none;
+}
