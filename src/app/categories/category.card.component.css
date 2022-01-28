@@ -8,6 +8,11 @@
     transform: rotate(-15deg);
 }
 
+.card-title {
+    font-weight: 100;
+    font-size: 1.6em;
+}
+
 .card {
     border-style: none;
 }
