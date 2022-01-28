@@ -3,10 +3,39 @@
     border-style: none;
 }
 
+.card-link {
+    text-decoration: none;
+    color: gray;
+}
+
+.card-link:hover {
+    color: #652f8c;
+}
+
+.badge {
+    background-color: #4b3c35;
+}
 .btn-group {
-    display: none;
+    opacity: 0;
+    width: 100%;
+    height: 15%;
+}
+
+.btn {
+    width: 50%;
+    background-color: #652f8c;
+    border-style: none;
+    
+}
+
+.btn:hover {
+    background-color: #52c9c8 !important;
+}
+
+.btn-group:hover{
+    opacity: 1;
 }
 
 img:hover + .btn-group {
-    display: block;
+    opacity: 1;
 }
