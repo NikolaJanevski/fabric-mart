@@ -16,5 +16,11 @@ export const mock_product_list = [
         price: 16.99,
         sku: "DCD6611d",
         description: "Fern Green 100% Cotton Twill Bottom Weight - NY Designer - 62W"
+    },
+    {
+        img: "./assets/thumbnail4.jpeg",
+        price: 14.99,
+        sku: "SKB6461d",
+        description: "Pale Sandstorm/Black/Titanium 100% Cotton Sketch Floral Print Lawn - NY Designer - 58W"
     }
 ];

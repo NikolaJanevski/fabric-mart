@@ -12,17 +12,15 @@
 </div>
 
 <div class="container-fluid d-flex">
-    <fm-vertical-card class="mx-2" img="./assets/thumbnail1.jpeg" [price]=10 sku="DLB6594"
-        description="Light Cream 100% Cotton Denim Twill - NY Designer - 58W">Loading...
-    </fm-vertical-card>
-
-    <fm-vertical-card class="mx-2" img="./assets/thumbnail2.jpeg" [price]=19.99 sku="MGD6706"
-        description="Dark Shadow Gray/Black 100% Cotton Twill Jacketing - NY Designer - 60W">Loading...
-    </fm-vertical-card>
-    
-    <fm-vertical-card class="mx-2" img="./assets/thumbnail3.jpeg" [price]=16.99 sku="DCD6611d"
-        description="Fern Green 100% Cotton Twill Bottom Weight - NY Designer - 62W">Loading...
-    </fm-vertical-card>
+    <div *ngFor="let product of products">
+        <fm-vertical-card class="mx-2"
+            img={{product.img}}
+            sku={{product.sku}}
+            description={{product.description}}
+            [price] = 'product.price'>
+            Loading...
+        </fm-vertical-card>       
+    </div>
 </div>
 
 <div class="container-fluid">
