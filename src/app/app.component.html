@@ -13,24 +13,25 @@
 
 <div class="container-fluid d-flex">
     <div *ngFor="let product of products">
-        <fm-vertical-card class="mx-2"
-            img={{product.img}}
-            sku={{product.sku}}
-            description={{product.description}}
-            [price] = 'product.price'>
+        <fm-vertical-card class="mx-2" img={{product.img}} sku={{product.sku}} description={{product.description}}
+            [price]='product.price'>
             Loading...
-        </fm-vertical-card>       
+        </fm-vertical-card>
     </div>
 </div>
 
 <div class="container-fluid">
-    <fm-horizontal-card class="m-5">Loading ...</fm-horizontal-card>
-    <fm-horizontal-card class="m-5">Loading ...</fm-horizontal-card>
+    <div *ngFor="let product of products">
+        <fm-horizontal-card class="m-5" img={{product.img}} sku={{product.sku}} description={{product.description}}
+            [price]='product.price'>Loading ...</fm-horizontal-card>
+    </div>
 </div>
 
 <div class="container-fluid border-bottom">
-    <fm-item-row>Loading...</fm-item-row>
-    <fm-item-row>Loading...</fm-item-row>
+    <div *ngFor="let product of products">
+        <fm-item-row sku={{product.sku}} description={{product.description}}
+        [price]='product.price'>Loading...</fm-item-row>
+    </div>
 </div>
 
 <fm-footer>Loading...</fm-footer>
