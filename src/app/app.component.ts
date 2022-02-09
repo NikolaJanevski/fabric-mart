@@ -10,13 +10,5 @@ import { category_list } from './categories/category_list';
 })
 export class AppComponent {
   title = 'fabric-mart';
-  products: ProductItemModel [] = [];
-  category_list: any = category_list;
-
-  constructor() {
-    for (var product of mock_product_list) {
-      console.log(product);
-      this.products.push(product);
-    }
-  }
+  
 }

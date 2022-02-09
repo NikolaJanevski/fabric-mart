@@ -11,6 +11,10 @@ import { SecondTopNavBarComponent } from './navigation/second.topnavbar.componen
 import { HorizontalCardComponent } from './store/horizontal.card.component';
 import { ItemRowComponent } from './store/item.row.component';
 import { VerticalCardComponent } from './store/vertical.card.component';
+import { AppRoutingModule } from './app-routing.module';
+import { DesignerLinenLayoutComponent } from './store/designer-linen-layout.component';
+import { HomeLayoutComponent } from './store/home-layout.component';
+
 
 @NgModule({
   declarations: [
@@ -23,10 +27,13 @@ import { VerticalCardComponent } from './store/vertical.card.component';
     PromotionsCarouselComponent,
     VerticalCardComponent,
     HorizontalCardComponent,
-    ItemRowComponent
+    ItemRowComponent,
+    DesignerLinenLayoutComponent,
+    HomeLayoutComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

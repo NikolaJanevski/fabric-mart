@@ -1,14 +1,39 @@
 <nav class="navbar navbar-expand navbar-light bg-light">
     <div class="container">
         <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" href="#">
+            <li class="nav-item dropdown">
+                <a class="nav-link" href="#" id="designerFabricsDropdown" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
                     DESIGNER FABRICS
                 </a>
+
+                <ul class="dropdown-menu text-center" aria-labelledby="designerFabricsDropdown">
+                    <li class="nav-item">
+                        <a routerLink="Designer-Linen" routerLinkActive="active" class="dropdown-item" href="#">
+                            Designer Quality Linen
+                        </a>
+                    </li>
+
+                    <li><hr class="dropdown-divider"></li>
+
+                    <li class="nav-item">
+                        <a class="dropdown-item" href="#">
+                            Famous Dress Designer
+                        </a>
+                    </li>
+
+                    <li><hr class="dropdown-divider"></li>
+
+                    <li class="nav-item">
+                        <a class="dropdown-item" href="#">
+                            High-End Designer Label
+                        </a>
+                    </li>
+                </ul>
             </li>
 
             <li class="nav-item dropdown">
-                <a class="nav-link active" href="#" id="salesClearanceDropdown" role="button" data-bs-toggle="dropdown"
+                <a class="nav-link" href="#" id="salesClearanceDropdown" role="button" data-bs-toggle="dropdown"
                     aria-expanded="false">
                     SALES/CLEARANCE FABRIC
                 </a>

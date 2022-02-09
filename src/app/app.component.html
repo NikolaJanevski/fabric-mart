@@ -2,36 +2,9 @@
 
 <fm-second-topnavbar>Loading...</fm-second-topnavbar>
 
-<fm-promotions-carousel>Loading...</fm-promotions-carousel>
+<router-outlet></router-outlet>
 
-<div class="container-fluid d-flex">
-    <div *ngFor="let category of category_list">
-        <fm-category-card title={{category.title}} link_text={{category.link_text}} bg_color={{category.bg_color}}>Loading...</fm-category-card>
-    </div>
-</div>
 
-<div class="container-fluid d-flex">
-    <div *ngFor="let product of products">
-        <fm-vertical-card class="mx-2" img={{product.img}} sku={{product.sku}} description={{product.description}}
-            [price]='product.price'>
-            Loading...
-        </fm-vertical-card>
-    </div>
-</div>
-
-<div class="container-fluid">
-    <div *ngFor="let product of products">
-        <fm-horizontal-card class="m-5" img={{product.img}} sku={{product.sku}} description={{product.description}}
-            [price]='product.price'>Loading ...</fm-horizontal-card>
-    </div>
-</div>
-
-<div class="container-fluid border-bottom">
-    <div *ngFor="let product of products">
-        <fm-item-row sku={{product.sku}} description={{product.description}}
-        [price]='product.price'>Loading...</fm-item-row>
-    </div>
-</div>
 
 <fm-footer>Loading...</fm-footer>
 <fm-social-footer>Loading...</fm-social-footer>
