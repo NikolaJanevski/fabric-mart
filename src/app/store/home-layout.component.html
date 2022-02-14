@@ -1,30 +1,28 @@
 <fm-promotions-carousel>Loading...</fm-promotions-carousel>
 
-<div class="container-fluid d-flex">
-    <div *ngFor="let category of category_list">
-        <fm-category-card title={{category.title}} link_text={{category.link_text}} bg_color={{category.bg_color}}>Loading...</fm-category-card>
-    </div>
-</div>
-
-<div class="container-fluid d-flex">
-    <div *ngFor="let product of products">
-        <fm-vertical-card class="mx-2" img={{product.img}} sku={{product.sku}} description={{product.description}}
-            [price]='product.price'>
-            Loading...
-        </fm-vertical-card>
-    </div>
-</div>
-
 <div class="container-fluid">
-    <div *ngFor="let product of products">
-        <fm-horizontal-card class="m-5" img={{product.img}} sku={{product.sku}} description={{product.description}}
-            [price]='product.price'>Loading ...</fm-horizontal-card>
-    </div>
-</div>
+    <div class="row">
+        <div class="col-2"></div>
+        <div class="col-8">
 
-<div class="container-fluid border-bottom">
-    <div *ngFor="let product of products">
-        <fm-item-row sku={{product.sku}} description={{product.description}}
-        [price]='product.price'>Loading...</fm-item-row>
+            <div class="row">
+                <h1>Welcome to Fabric Mart</h1>
+                <div class="col-6">
+                    Fabric Mart has been selling discount fabric by the yard for over 40 years. Our website was developed in 1999 to meet the needs of our customers. In addition to our online fabric store we have a retail store that is located at 3911 Penn Avenue, Sinking Spring, PA. We pride ourselves on our customer service and the ability to offer such great
+                </div>
+                <div class="col-6">
+                    fabrics at tremendous savings. We are still a relatively small family business but have grown to include 22+ employees. Call us during normal business hours and you will always be greeted by a live person ready to help with whatever you need. Thank you for stopping in!
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-3" *ngFor="let category of category_list">
+                    <fm-category-card title={{category.title}} link_text={{category.link_text}}
+                        bg_color={{category.bg_color}}>
+                        Loading...</fm-category-card>
+                </div>
+            </div>
+        </div>
+        <div class="col-2"></div>
     </div>
 </div>
