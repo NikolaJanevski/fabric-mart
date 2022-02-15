@@ -14,6 +14,8 @@ import { VerticalCardComponent } from './store/vertical.card.component';
 import { AppRoutingModule } from './app-routing.module';
 import { DesignerLinenLayoutComponent } from './store/designer-linen-layout.component';
 import { HomeLayoutComponent } from './store/home-layout.component';
+import { FamousDressDesignerComponent } from './store/famous-dress-designer/famous-dress-designer.component';
+import { HighEndDesignerComponent } from './store/high-end-designer/high-end-designer.component';
 
 
 @NgModule({
@@ -29,7 +31,9 @@ import { HomeLayoutComponent } from './store/home-layout.component';
     HorizontalCardComponent,
     ItemRowComponent,
     DesignerLinenLayoutComponent,
-    HomeLayoutComponent
+    HomeLayoutComponent,
+    FamousDressDesignerComponent,
+    HighEndDesignerComponent
   ],
   imports: [
     BrowserModule,
