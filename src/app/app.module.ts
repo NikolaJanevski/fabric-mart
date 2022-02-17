@@ -16,6 +16,10 @@ import { DesignerLinenLayoutComponent } from './store/designer-linen-layout.comp
 import { HomeLayoutComponent } from './store/home-layout.component';
 import { FamousDressDesignerComponent } from './store/famous-dress-designer/famous-dress-designer.component';
 import { HighEndDesignerComponent } from './store/high-end-designer/high-end-designer.component';
+import { DesignerFabricsComponent } from './store/designer-fabrics/designer-fabrics.component';
+import { DesignerFabricsCategoriesMainComponent } from './store/designer-fabrics-categories-main/designer-fabrics-categories-main.component';
+import { DesignerFabricsCategoriesSidemenuComponent } from './store/designer-fabrics-categories-sidemenu/designer-fabrics-categories-sidemenu.component';
+import { ProductFilterFormSidemenuComponent } from './store/product-filter-form-sidemenu/product-filter-form-sidemenu.component';
 
 
 @NgModule({
@@ -33,7 +37,11 @@ import { HighEndDesignerComponent } from './store/high-end-designer/high-end-des
     DesignerLinenLayoutComponent,
     HomeLayoutComponent,
     FamousDressDesignerComponent,
-    HighEndDesignerComponent
+    HighEndDesignerComponent,
+    DesignerFabricsComponent,
+    DesignerFabricsCategoriesMainComponent,
+    DesignerFabricsCategoriesSidemenuComponent,
+    ProductFilterFormSidemenuComponent
   ],
   imports: [
     BrowserModule,
