@@ -20,7 +20,8 @@ import { DesignerFabricsComponent } from './store/designer-fabrics/designer-fabr
 import { DesignerFabricsCategoriesMainComponent } from './store/designer-fabrics-categories-main/designer-fabrics-categories-main.component';
 import { DesignerFabricsCategoriesSidemenuComponent } from './store/designer-fabrics-categories-sidemenu/designer-fabrics-categories-sidemenu.component';
 import { ProductFilterFormSidemenuComponent } from './store/product-filter-form-sidemenu/product-filter-form-sidemenu.component';
-
+import { HttpClientModule } from '@angular/common/http';
+import { UserInfoComponent } from './user-info/user-info.component'
 
 @NgModule({
   declarations: [
@@ -41,11 +42,13 @@ import { ProductFilterFormSidemenuComponent } from './store/product-filter-form-
     DesignerFabricsComponent,
     DesignerFabricsCategoriesMainComponent,
     DesignerFabricsCategoriesSidemenuComponent,
-    ProductFilterFormSidemenuComponent
+    ProductFilterFormSidemenuComponent,
+    UserInfoComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
