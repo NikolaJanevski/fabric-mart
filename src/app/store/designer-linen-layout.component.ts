@@ -1,19 +1,24 @@
-import { Component } from "@angular/core";
-import { mock_product_list } from "./mock_product_list";
+import { Component, OnInit } from "@angular/core";
 import { ProductItemModel } from "./product-item.model";
+import { ProductsService } from "./products.service";
 
 @Component({
-    selector: 'fm-designer-quality',
-    templateUrl: 'designer-linen-layout.component.html',
-    styleUrls: ['designer-linen-layout.component.css']
+  selector: 'fm-designer-quality',
+  templateUrl: 'designer-linen-layout.component.html',
+  styleUrls: ['designer-linen-layout.component.css']
 })
-export class DesignerLinenLayoutComponent {
-    products: ProductItemModel [] = [];
+export class DesignerLinenLayoutComponent implements OnInit {
+  products: ProductItemModel[] = [];
 
-    constructor() {
-        for (var product of mock_product_list) {
-          console.log(product);
-          this.products.push(product);
-        }
+  constructor(private productsService:ProductsService) {
+  }
+  
+  ngOnInit(): void {
+    this.productsService.getProducts().subscribe((data: ProductItemModel []) => {
+      console.log("Fetching products");
+      for (var product of data) {
+        this.products.push(product);
       }
+    });
+  }
 }
