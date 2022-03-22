@@ -1,10 +1,17 @@
 {
-  "hosting": {
-    "public": "dist/fabric-mart",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
-    ]
-  }
+  "hosting": 
+    {
+      "public": "dist/fabric-mart",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    }
 }

@@ -17,6 +17,7 @@ export class DesignerLinenLayoutComponent implements OnInit {
     this.productsService.getProducts().subscribe((data: ProductItemModel []) => {
       console.log("Fetching products");
       for (var product of data) {
+        console.log(product);
         this.products.push(product);
       }
     });

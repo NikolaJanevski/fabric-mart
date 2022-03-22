@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "fabric-mart-8c085"
+  },
+  "targets": {
+    "fabric-mart-8c085": {
+      "hosting": {
+        "fabric-mart": [
+          "fabric-mart-8c085"
+        ]
+      }
+    }
   }
 }
