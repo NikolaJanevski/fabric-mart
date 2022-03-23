@@ -9,10 +9,12 @@ import { DesignerFabricsComponent } from './store/designer-fabrics/designer-fabr
 import { DesignerFabricsCategoriesMainComponent } from './store/designer-fabrics-categories-main/designer-fabrics-categories-main.component';
 import { DesignerFabricsCategoriesSidemenuComponent } from './store/designer-fabrics-categories-sidemenu/designer-fabrics-categories-sidemenu.component';
 import { ProductFilterFormSidemenuComponent } from './store/product-filter-form-sidemenu/product-filter-form-sidemenu.component';
+import { AddProductComponent } from './store/add-product/add-product.component';
 
 const routes:Routes = [
   {path: '', component: HomeLayoutComponent},
   {path: 'home', component: HomeLayoutComponent},
+  {path: 'admin', component: AddProductComponent},
   {
     path: 'designer-fabrics', 
     component: DesignerFabricsComponent,
