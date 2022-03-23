@@ -14,7 +14,7 @@
 
                 <div class="input-group">
                     <span class="input-group-text">SKU</span>
-                    <input type="text" class="form-control" ngModel name="sku">
+                    <input type="text" class="form-control" required ngModel name="sku">
                 </div>
 
                 <div class="input-group">
@@ -22,7 +22,7 @@
                     <input type="text" class="form-control" ngModel name="description">
                 </div>
 
-                <button class="btn btn-light" type="submit">
+                <button class="btn btn-light" type="submit" [disabled]="!postForm.valid">
                     Add Product
                 </button>
             </form>
